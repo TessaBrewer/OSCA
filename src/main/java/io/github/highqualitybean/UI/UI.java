@@ -8,5 +8,7 @@ package io.github.highqualitybean.UI;
 public interface UI {
   public void print(String s);
   
-  public void printErr(String s);
+  public void println(String s);
+  
+  public void printerr(String s);
 }

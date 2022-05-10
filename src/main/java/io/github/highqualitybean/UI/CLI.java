@@ -9,7 +9,11 @@ public class CLI implements UI {
     System.out.print(s);
   }
   
-  public void printErr(String s) {
+  public void println(String s) {
+    this.print(s + "\n");
+  }
+  
+  public void printerr(String s) {
     System.err.print(s);
   }
 }

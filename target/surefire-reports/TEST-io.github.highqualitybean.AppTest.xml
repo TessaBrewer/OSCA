@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="io.github.highqualitybean.AppTest" time="0.019" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\projects\java\OSCA\target\test-classes;D:\projects\java\OSCA\target\classes;C:\Users\tjobs\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tjobs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="IE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Progra~1\Java\jdk1.8.0_231\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\tjobs\AppData\Local\Temp\surefire6982799827270607371\surefirebooter2079824276835332582.jar C:\Users\tjobs\AppData\Local\Temp\surefire6982799827270607371 2022-05-10T19-15-05_000-jvmRun1 surefire5479747213772766583tmp surefire_07889145514294114001tmp"/>
+    <property name="surefire.test.class.path" value="D:\projects\java\OSCA\target\test-classes;D:\projects\java\OSCA\target\classes;C:\Users\tjobs\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tjobs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\tjobs"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Progra~1\Java\jdk1.8.0_231\jre"/>
+    <property name="basedir" value="D:\projects\java\OSCA"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\tjobs\AppData\Local\Temp\surefire6982799827270607371\surefirebooter2079824276835332582.jar"/>
+    <property name="sun.boot.class.path" value="C:\Progra~1\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="user.name" value="tjobs"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Progra~1\Java\jdk1.8.0_231\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\tjobs\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\tjobs\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="user.dir" value="D:\projects\java\OSCA"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Progra~1\Java\jdk1.8.0_231\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\apache-maven-3.8.4\bin;C:\Program Files\CommonFiles\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSS;C:\Program Files (x86)\Notepad++;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Windows\System32\OpenSSH;C:\Users\tjobs\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\tjobs\AppData\Local\Programs\Python\Python310\;C:\Users\tjobs\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tjobs\AppData\Local\GitHubDesktop\bin;C:\Users\tjobs\AppData\Local\Programs\mongosh\;C:\Program Files\MongoDB\Server\5.0\bin\;D:\hadoop\hadoop-3.2.1\bin;C:\Progra~1\Java\jdk1.8.0_231\bin;C:\Spark\spark-3.2.1-bin-hadoop3.2\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\tjobs\.cargo\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.ext.dirs" value="C:\Progra~1\Java\jdk1.8.0_231\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="io.github.highqualitybean.AppTest" time="0.001"/>
+</testsuite>

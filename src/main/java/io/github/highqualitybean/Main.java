@@ -13,8 +13,5 @@ public class Main
     } else {
       ui = new GUI();
     }
-    
-    ui.print("Hello World!");
-    ui.printErr("Testing Print Error");
   }
 }

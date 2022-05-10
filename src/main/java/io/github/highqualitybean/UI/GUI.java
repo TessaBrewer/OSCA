@@ -58,11 +58,15 @@ public class GUI implements UI {
     try {
       mainText.insertString(mainText.getLength(), s, null);
     } catch (BadLocationException exc) {
-      this.printErr(s);
+      this.printerr(s);
     }
   }
   
-  public void printErr(String s) {
+  public void println(String s) {
+    this.print(s + "\n");
+  }
+  
+  public void printerr(String s) {
     err.append(s);
   }
 }
