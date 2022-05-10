@@ -1,13 +1,20 @@
 package io.github.highqualitybean;
 
-/**
- * Hello world!
- *
- */
+import io.github.highqualitybean.UI.*;
+
 public class Main 
 {
+  private static UI ui;
+  
   public static void main(String[] args)
   {
-    System.out.println("Hello World!");
+    if(System.console() != null) {
+      ui = new CLI();
+    } else {
+      ui = new GUI();
+    }
+    
+    ui.print("Hello World!");
+    ui.printErr("Testing Print Error");
   }
 }

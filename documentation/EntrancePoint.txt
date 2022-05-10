@@ -1,0 +1,5 @@
+Code execution starts with "Main.main(args)" From here we determine which interface we should 
+be using
+	In theory this should allow us to support both a GUI and a shell
+We then pass everything to the "ExecutionManager" which will only interact with the interface 
+through the abstract UI interface, Main handles the concrete implementation.
