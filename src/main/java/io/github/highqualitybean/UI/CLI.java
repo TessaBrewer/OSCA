@@ -16,4 +16,8 @@ public class CLI implements UI {
   public void printerr(String s) {
     System.err.print(s);
   }
+  
+  public void printerrln(String s) {
+    this.printerr(s + "\n");
+  }
 }

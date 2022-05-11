@@ -69,4 +69,8 @@ public class GUI implements UI {
   public void printerr(String s) {
     err.append(s);
   }
+  
+  public void printerrln(String s) {
+    this.printerr(s + "\n");
+  }
 }

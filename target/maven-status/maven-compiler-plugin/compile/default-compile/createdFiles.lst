@@ -1,4 +1,6 @@
+io\github\highqualitybean\Flags.class
 io\github\highqualitybean\Main.class
 io\github\highqualitybean\UI\GUI.class
+io\github\highqualitybean\Config.class
 io\github\highqualitybean\UI\UI.class
 io\github\highqualitybean\UI\CLI.class

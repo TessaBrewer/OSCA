@@ -11,4 +11,6 @@ public interface UI {
   public void println(String s);
   
   public void printerr(String s);
+  
+  public void printerrln(String s);
 }
