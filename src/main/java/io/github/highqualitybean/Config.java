@@ -12,7 +12,7 @@ import java.util.*;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 
 public class Config {
-  private static String filename = "settings.tsv";
+  private static String filename = "settings.properties";
   private static Properties properties = new Properties();
   
   public static void set() {
@@ -22,7 +22,7 @@ public class Config {
   public static void set(String fn) {
     filename = fn;
     try {
-      properties.load(new FileReader(filename));
+      properties.load(Config.class.getClassLoader().getResourceAsStream(filename));
     } catch(IOException e) {
       Main.ui.printerrln("Error loading configuration file");
       if(Flags.verbose){
