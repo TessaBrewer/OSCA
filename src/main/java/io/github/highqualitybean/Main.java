@@ -1,6 +1,8 @@
 package io.github.highqualitybean;
 
 import io.github.highqualitybean.UI.*;
+import io.github.highqualitybean.UI.CLI.CLI;
+import io.github.highqualitybean.UI.GUI.GUI;
 import io.github.highqualitybean.*;
 
 public class Main 

@@ -2,7 +2,9 @@
 //A graphical interface using swing//
 //---------------------------------//
 
-package io.github.highqualitybean.UI;
+package io.github.highqualitybean.UI.GUI;
+
+import io.github.highqualitybean.UI.*;
 
 import javax.swing.*;
 import javax.swing.text.*;

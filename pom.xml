@@ -14,8 +14,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -31,6 +31,16 @@
       <artifactId>commons-configuration2</artifactId>
       <version>2.7</version>
     </dependency>
+
+	<!--For right now this is just so we can get the console width-->
+	<!--Note: This is under the BSD 2-Clause license, which I think means I can't use the 
+names of the project or the makers for promotion and that we need to include this in our 
+license (either that or that this is an 'as is' product)-->
+	<dependency>
+		<groupId>org.jline</groupId>
+		<artifactId>jline</artifactId>
+		<version>3.21.0</version>
+	</dependency>
   </dependencies>
 
   <build>
