@@ -85,7 +85,8 @@ public class CLI implements UI {
       while(!breakFlag) {
         System.out.print("OSCA " + workingDirectory + "> ");
         currentLine = in.nextLine();
-        System.out.println(currentLine);
+        
+        (new SubShell()).exec(currentLine, workingDirectory);
       }
     }
   }

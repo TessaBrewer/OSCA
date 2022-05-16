@@ -2,6 +2,7 @@ io\github\highqualitybean\Flags.class
 io\github\highqualitybean\Main.class
 io\github\highqualitybean\UI\CLI\CLI$Listener.class
 io\github\highqualitybean\UI\CLI\CLI.class
+io\github\highqualitybean\UI\CLI\SubShell.class
 io\github\highqualitybean\UI\GUI\GUI.class
 io\github\highqualitybean\Config.class
 io\github\highqualitybean\UI\UI.class

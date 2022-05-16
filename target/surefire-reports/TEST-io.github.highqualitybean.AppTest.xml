@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="io.github.highqualitybean.AppTest" time="0.024" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="io.github.highqualitybean.AppTest" time="0.022" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="IE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Progra~1\Java\jdk1.8.0_231\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\tjobs\AppData\Local\Temp\surefire2775684571860594502\surefirebooter374226591880755529.jar C:\Users\tjobs\AppData\Local\Temp\surefire2775684571860594502 2022-05-16T19-12-27_286-jvmRun1 surefire5260592201729541967tmp surefire_08649663458069851310tmp"/>
+    <property name="sun.java.command" value="C:\Users\tjobs\AppData\Local\Temp\surefire8428360939465673397\surefirebooter5046374205510673197.jar C:\Users\tjobs\AppData\Local\Temp\surefire8428360939465673397 2022-05-16T20-48-50_416-jvmRun1 surefire7018097525116441627tmp surefire_08025426194148291225tmp"/>
     <property name="surefire.test.class.path" value="D:\projects\java\OSCA\target\test-classes;D:\projects\java\OSCA\target\classes;C:\Users\tjobs\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tjobs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\tjobs\.m2\repository\org\apache\commons\commons-configuration2\2.7\commons-configuration2-2.7.jar;C:\Users\tjobs\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\tjobs\.m2\repository\org\apache\commons\commons-text\1.8\commons-text-1.8.jar;C:\Users\tjobs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\tjobs\.m2\repository\org\jline\jline\3.21.0\jline-3.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\tjobs"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\tjobs\AppData\Local\Temp\surefire2775684571860594502\surefirebooter374226591880755529.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\tjobs\AppData\Local\Temp\surefire8428360939465673397\surefirebooter5046374205510673197.jar"/>
     <property name="sun.boot.class.path" value="C:\Progra~1\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Progra~1\Java\jdk1.8.0_231\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
