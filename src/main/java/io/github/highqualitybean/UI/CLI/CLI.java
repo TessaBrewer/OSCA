@@ -85,9 +85,43 @@ public class CLI implements UI {
       while(!breakFlag) {
         System.out.print("OSCA " + workingDirectory + "> ");
         currentLine = in.nextLine();
+        String [] elms = currentLine.split("\\s+"); //Split on whitespace
         
-        (new SubShell()).exec(currentLine, workingDirectory);
+        switch(elms[0].toLowerCase()) {
+          case "cd":
+            cd(elms);
+            break;
+            
+          default:
+            //We take this to the subshell iff it isn't one of our commands
+            (new SubShell()).exec(currentLine, workingDirectory);
+            break;
+        }
       }
+    }
+  }
+  
+  public void cd(String [] args) {
+    if(args.length < 2) {
+      printerrln("Please specify a directory");
+      return;
+    }
+    
+    switch(args[1]) {
+      case ".":
+        break;
+      case "..":
+        String [] directoryStructure = workingDirectory.split(Config.get("dir.delimiter"));
+        StringBuilder newWorkingDirectory = new StringBuilder();
+        for(int i = 0; i < directoryStructure.length - 1; i++) {
+          newWorkingDirectory.append(directoryStructure[1]);
+          newWorkingDirectory.append(Config.get("dir.delimiter"));
+        }
+        workingDirectory = newWorkingDirectory.toString();
+        break;
+      default:
+        workingDirectory = workingDirectory + Config.get("dir.delimiter") + args[1];
+        break;
     }
   }
 }

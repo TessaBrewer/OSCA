@@ -28,7 +28,8 @@ public class SubShell {
     } catch(SecurityException e) {
       Main.ui.printerrln("Error, subprocess could not be created");
     } catch(IOException e) {
-      Main.ui.printerrln("An I/O error occurred");
+      Main.ui.printerrln("An I/O error occurred (command not found?)");
+      e.printStackTrace();
     } catch(NullPointerException e) {
       Main.ui.printerrln("Command was null");
     } catch(IllegalArgumentException e) {
