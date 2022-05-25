@@ -12,6 +12,7 @@ import java.util.Collections;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.io.IOException;
+import java.io.File;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
@@ -110,6 +111,7 @@ public class CLI implements UI {
     switch(args[1]) {
       case ".":
         break;
+        
       case "..":
         String [] directoryStructure = workingDirectory.split(Config.get("dir.delimiter"));
         StringBuilder newWorkingDirectory = new StringBuilder();
@@ -119,8 +121,14 @@ public class CLI implements UI {
         }
         workingDirectory = newWorkingDirectory.toString();
         break;
+        
       default:
-        workingDirectory = workingDirectory + Config.get("dir.delimiter") + args[1];
+        String tempWorkingDirectory = workingDirectory + Config.get("dir.delimiter") + args[1];
+        if((new File(tempWorkingDirectory)).isDirectory()) {
+          workingDirectory = tempWorkingDirectory;
+        } else {
+          printerrln("Error: Could not find the path specified");
+        }
         break;
     }
   }
