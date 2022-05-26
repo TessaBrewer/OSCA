@@ -153,8 +153,8 @@ public class CLI implements UI {
   public void dir() {
     String[] subFiles = (new File(workingDirectory)).list();
     
-    println("Type\tPerms\t    Last Write Time     \tLength\tName");
-    println("----\t-----\t------------------------\t------\t----");
+    println("Type\tPerms\t    Last Write Time     \tLength (B)\tName");
+    println("----\t-----\t------------------------\t----------\t----");
     
     for(String fileName : subFiles) {
       File currentFile = new File(workingDirectory + Config.get("dir.delimiter") + fileName);
@@ -193,9 +193,9 @@ public class CLI implements UI {
       SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy HH:mm:ss:SSS");
       String lastWriteDate = df.format(date);
       
-      String length = (currentFile.isFile() ? (String.valueOf(currentFile.length()) + "B") : ("NA"));
+      String length = (currentFile.isFile() ? (String.valueOf(currentFile.length())) : ("NA"));
       
-      println(type + "\t" + perms + "\t" + lastWriteDate + "\t" + length + "\t" + fileName);
+      println(type + "\t" + perms + "\t" + lastWriteDate + "\t" + length + "\t\t" + fileName);
     }
   }
 }
