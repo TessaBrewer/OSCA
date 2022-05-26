@@ -29,3 +29,7 @@ TODO List
 - It'd be nice if I could use this as part of a build process like a test, so I can say "Fail this test if OSCA says u'll take more than 5 seconds to run"
 - Custom software themeing, I want to be able to customize everything to different themes, different header, X button etc, and create my own themes using some sort of file format
 - I want to be able to install this, add it to the path variable, register as software etc automatically. One click on an installation wizard then I can run via the windows button.
+
+Nasty Broken Stuff
+==================
+- "dir" only outputs file names for other directories
