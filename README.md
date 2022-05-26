@@ -1,3 +1,8 @@
+Solutions List
+=============
+- I think Imma rely on Radiance for as much GUI stuff as possible
+   - See https://github.com/kirill-grouchnikov/radiance
+
 TODO List
 ==============
 
