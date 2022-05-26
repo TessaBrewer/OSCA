@@ -32,4 +32,3 @@ TODO List
 
 Nasty Broken Stuff
 ==================
-- "dir" only outputs file names for other directories
