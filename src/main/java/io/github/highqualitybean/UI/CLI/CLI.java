@@ -154,10 +154,10 @@ public class CLI implements UI {
     String[] subFiles = (new File(workingDirectory)).list();
     
     println("Type\tPerms\t    Last Write Time     \tLength\tName");
-    println("----\t----\t------------------------\t------\t----");
+    println("----\t-----\t------------------------\t------\t----");
     
     for(String fileName : subFiles) {
-      File currentFile = new File(fileName);
+      File currentFile = new File(workingDirectory + Config.get("dir.delimiter") + fileName);
       
       String type = "";
       if(currentFile.isFile())
