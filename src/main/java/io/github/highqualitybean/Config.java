@@ -35,7 +35,8 @@ public class Config {
   public synchronized static String get(String s) throws NullPointerException {
     if(properties.isEmpty())
       set();
-    return properties.getProperty(s);
+    String prop = properties.getProperty(s);
+    return prop;
   }
   
   public synchronized static int getInt(String s) throws NullPointerException {

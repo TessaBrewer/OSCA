@@ -125,12 +125,17 @@ public class CLI implements UI {
         break;
         
       case "..":
-        String [] directoryStructure = workingDirectory.split(Config.get("dir.delimiter"));
+        String delim = Config.get("dir.delimiter");
+        String [] directoryStructure = workingDirectory.split(delim.replace("\\", "\\\\"));
+        if(directoryStructure.length <= 1)
+          return;
         StringBuilder newWorkingDirectory = new StringBuilder();
-        for(int i = 0; i < directoryStructure.length - 1; i++) {
-          newWorkingDirectory.append(directoryStructure[1]);
+        int i = 0;
+        for(i = 0; i < directoryStructure.length - 2; i++) {
+          newWorkingDirectory.append(directoryStructure[i]);
           newWorkingDirectory.append(Config.get("dir.delimiter"));
         }
+        newWorkingDirectory.append(directoryStructure[i]);
         workingDirectory = newWorkingDirectory.toString();
         break;
         
@@ -160,7 +165,7 @@ public class CLI implements UI {
       if(currentFile.isDirectory())
         type="Dir";
       
-      String perms = " ";
+      String perms = "";
       if(currentFile.canExecute()) {
         perms += "X";
       } else {
@@ -181,6 +186,7 @@ public class CLI implements UI {
       } else {
         perms += "-";
       }
+      perms += " ";
       
       long lastWriteMillis = currentFile.lastModified();
       Date date = new Date(lastWriteMillis);
