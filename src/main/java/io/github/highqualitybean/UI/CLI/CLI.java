@@ -11,10 +11,12 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.util.Date;
 import java.io.IOException;
 import java.io.File;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
+import java.text.SimpleDateFormat;
 
 public class CLI implements UI {
   private String workingDirectory;
@@ -93,6 +95,16 @@ public class CLI implements UI {
             cd(elms);
             break;
             
+          case "dir":
+            dir();
+            break;
+            
+          case "quit":
+          case "exit":
+          case "q":
+            breakFlag = true;
+            break;
+            
           default:
             //We take this to the subshell iff it isn't one of our commands
             (new SubShell()).exec(currentLine, workingDirectory);
@@ -130,6 +142,54 @@ public class CLI implements UI {
           printerrln("Error: Could not find the path specified");
         }
         break;
+    }
+  }
+  
+  public void dir() {
+    String[] subFiles = (new File(workingDirectory)).list();
+    
+    println("Type\tPerms\t    Last Write Time     \tLength\tName");
+    println("----\t----\t------------------------\t------\t----");
+    
+    for(String fileName : subFiles) {
+      File currentFile = new File(fileName);
+      
+      String type = "";
+      if(currentFile.isFile())
+        type="File";
+      if(currentFile.isDirectory())
+        type="Dir";
+      
+      String perms = " ";
+      if(currentFile.canExecute()) {
+        perms += "X";
+      } else {
+        perms += "-";
+      }
+      if(currentFile.canRead()) {
+        perms += "R";
+      } else {
+        perms += "-";
+      }
+      if(currentFile.canWrite()) {
+        perms += "W";
+      } else {
+        perms += "-";
+      }
+      if(currentFile.isHidden()) {
+        perms += "H";
+      } else {
+        perms += "-";
+      }
+      
+      long lastWriteMillis = currentFile.lastModified();
+      Date date = new Date(lastWriteMillis);
+      SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy HH:mm:ss:SSS");
+      String lastWriteDate = df.format(date);
+      
+      String length = (currentFile.isFile() ? (String.valueOf(currentFile.length()) + "B") : ("NA"));
+      
+      println(type + "\t" + perms + "\t" + lastWriteDate + "\t" + length + "\t" + fileName);
     }
   }
 }
