@@ -3,6 +3,18 @@ Solutions List
 - I think Imma rely on Radiance for as much GUI stuff as possible
    - See https://github.com/kirill-grouchnikov/radiance
 
+- Data Gathering
+   - We'll need a "program manager", a "program", and a "data gatherer"
+      - The program manager will hold the program, execute the program, and handling events
+      - The program will be created from whatever stuff the user gives us, essentially just something we can execute
+         - Depending on how we do this it could literally just be java byte code (in which case we'll need to program our own JVM that will be managed by the "program manager"
+      - The "data gatherers" will hold their data, will have methods for accessing this data, will have the ability to READ but **NOT** change the state of a currently executing program, and will be triggered via event
+         - By forcing read only we can execute all data gatherers at the same time, massively speeding up program execution
+         - Gatherers will have to "register" with the manager, which will trigger them when the requested event is fired
+            - For example, a "DuplicateMemoryFinder" (which would extend the "DataGatherer" interface) might register for the "memory change" event, and might store a list of sections of memory that it believes to be duplicated (mby with some context around it so this info can be interpreted?)
+               - Maybe it stores it's data as a "ProgramFrame" which contains information about the state of the program at an instance, and some associated data (ie the data we believe to be duplicated?)
+                  - This could be extended to other gatherers by changing the assoc data & would allow a single "get" function shared by all gatherers
+                  - 
 TODO List
 ==============
 
